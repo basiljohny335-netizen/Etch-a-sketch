@@ -5,3 +5,9 @@ const square = document.createElement("div");
 square.classList.add("grid-square");
 gridContainer.appendChild(square);
 }
+const squares = document.querySelectorAll(".grid-square");
+squares.forEach((square) =>  {
+    square.addEventListener("mouseenter", () => {
+        square.style.backgroundColor = "black";
+    });
+});
